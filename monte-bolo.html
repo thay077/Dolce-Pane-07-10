@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monte seu Bolo</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="logo">Dolce & Pane</div>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="monte-bolo.html">Monte seu Bolo</a>
+    <a href="cardapio.html">Cardápio</a>
+    <a href="carrinho.html">Carrinho</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+</header>
+<main>
+  <h2>Monte seu Bolo</h2>
+  <form id="boloForm">
+    <label>Sabor do Bolo:</label>
+    <select name="sabor" required>
+      <option value="chocolate">Chocolate</option>
+      <option value="baunilha">Baunilha</option>
+      <option value="morango">Morango</option>
+    </select>
+    <label>Recheio:</label>
+    <select name="recheio" required>
+      <option value="brigadeiro">Brigadeiro</option>
+      <option value="doce-leite">Doce de Leite</option>
+      <option value="creme">Creme</option>
+    </select>
+    <label>Cobertura:</label>
+    <select name="cobertura" required>
+      <option value="chocolate">Chocolate</option>
+      <option value="chantilly">Chantilly</option>
+      <option value="frutas">Frutas</option>
+    </select>
+    <label>Peso (kg):</label>
+    <input type="number" name="peso" min="0.5" max="5" step="0.5" required>
+    <label>Mensagem Personalizada:</label>
+    <input type="text" name="mensagem" placeholder="Feliz Aniversário!" required>
+    <button type="submit" class="submit">Adicionar ao Carrinho</button>
+  </form>
+</main>
+<footer>
+  &copy; 2025 Dolce & Pane.
+</footer>
+<script src="js/cart.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

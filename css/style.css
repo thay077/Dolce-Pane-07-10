@@ -1,0 +1,24 @@
+:root{
+  --bg:#0b0b0b;
+  --text:#f5f5f5;
+  --accent:#d4af37;
+  --muted:#aaa;
+  --radius:12px;
+  --maxw:1100px;
+  --ff-title: 'Playfair Display', serif;
+  --ff-body: 'Roboto', sans-serif;
+}
+body{font-family:var(--ff-body);background:var(--bg);color:var(--text);margin:0;padding:20px;}
+a{text-decoration:none;color:var(--text);}
+a:hover{color:var(--accent);}
+header{display:flex;justify-content:space-between;align-items:center;padding:12px 0;}
+.logo{font-family:var(--ff-title);font-size:28px;color:var(--accent);}
+nav a{margin-left:20px;font-weight:500;color:var(--muted);}
+.hero{text-align:center;padding:40px 0;}
+.btn{padding:10px 20px;background:var(--accent);color:#0b0b0b;border:none;border-radius:8px;font-weight:700;cursor:pointer;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:20px;}
+.card{background:#1a1a1a;padding:16px;border-radius:var(--radius);}
+.card img{width:100%;border-radius:var(--radius);}
+input, select, textarea{width:100%;padding:10px;margin:6px 0;border-radius:8px;border:none;background:#1a1a1a;color:var(--text);}
+button.submit{background:var(--accent);color:#0b0b0b;font-weight:700;padding:10px;cursor:pointer;border-radius:8px;border:none;margin-top:10px;}
+footer{text-align:center;color:var(--muted);margin-top:30px;font-size:14px;}
